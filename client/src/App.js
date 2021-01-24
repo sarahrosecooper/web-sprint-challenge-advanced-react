@@ -12,6 +12,8 @@ function App() {
   // array of plants that have been added to the cart
   const [cart, setCart] = useState([]);
 
+  const myName = "Sarah"
+
   useEffect(()=>{
     axios.get('http://localhost:3333/plants')
       .then(res =>{
